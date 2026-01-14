@@ -1,19 +1,46 @@
-# Bad README
+# Termux Init
 
-> Termux Init
+Automated Termux setup featuring a handcrafted extra-keys layout.
 
-> 一些预览图和介绍
+1. **Create directory**: `/data/data/com.termux/files/home/.termux`
+2. **Extract files**: `termux.properties` `colors.properties` `font.ttf`
+3. **Execute commands** `termux-reload-settings`,
+`ln -sf "$PREFIX/etc/termux/mirrors/chinese_mainland" "$PREFIX/etc/termux/chosen_mirrors"`,
+`pkg update && pkg upgrade -y`
 
-> 两个命令,第二个是cdn加速的
+## Install (full)
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/miniyu157/termux-init/main/init.sh)
 ```
 
+(cdn)
+
 ```bash
 bash <(curl -fsSL https://cdn.jsdelivr.net/gh/miniyu157/termux-init@main/init.sh)
 ```
 
-> 致谢字体和主体
+## Install (extra-keys only)
 
-> 许可证,mit
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/miniyu157/termux-init/main/extrakeys.sh)
+```
+
+(cdn)
+
+```bash
+bash <(curl -fsSL https://cdn.jsdelivr.net/gh/miniyu157/termux-init@main/extrakeys.sh)
+```
+
+## Perview
+
+![extra-keys](./extrakeys.png)
+
+## Credits
+
+- **Font**: IosevkaTerm Nerd Font
+- **Theme**: Catppuccin
+
+## LICENSE
+
+[MIT LICENSE](./LICENSE)
