@@ -46,21 +46,43 @@ extra-keys = [ \
         }, \
         { \
             "key": "y", \
-            "display": "Y" \
+            "display": "Y/N", \
+            "popup": { \
+                "key": "n" \
+            } \
         }, \
         { \
             "macro": "CTRL c", \
             "display": "^C" \
         }, \
-        "$", \
-        "&", \
         { \
-            "macro": "QUOTE QUOTE LEFT", \
-            "display": "\\\"" \
+            "key": "$", \
+            "display": "$^", \
+            "popup": { \
+                "key": "^" \
+            } \
         }, \
         { \
-            "macro": "'' LEFT", \
-            "display": "'" \
+            "key": ":", \
+            "display": ":;", \
+            "popup": { \
+                "key": ";" \
+            } \
+        }, \
+        { \
+            "macro": "QUOTE QUOTE LEFT", \
+            "display": "\\\" '", \
+            "popup": { \
+                "macro": "'' LEFT", \
+                "display": "'" \
+            } \
+        }, \
+        { \
+            "key": ">", \
+            "display": "><", \
+            "popup": { \
+                "key": "<" \
+            } \
         }, \
         "PGUP" \
     ], \
@@ -70,14 +92,26 @@ extra-keys = [ \
             "display": "TAB" \
         }, \
         { \
-            "macro": ":q ENTER", \
-            "display": ":q" \
+            "key": "|", \
+            "display": "| \\\\", \
+            "popup": { \
+                "key": "\\\\" \
+            } \
         }, \
         { \
-            "macro": ":w ENTER", \
-            "display": ":w" \
+            "key": "&", \
+            "display": "&*", \
+            "popup": { \
+                "key": "*" \
+            } \
         }, \
-        "/", \
+        { \
+            "key": "/", \
+            "display": "/ ?", \
+            "popup": { \
+                "key": "?" \
+            } \
+        }, \
         { \
             "macro": "() LEFT", \
             "display": "()" \
@@ -91,10 +125,20 @@ extra-keys = [ \
         "CTRL", \
         "ALT", \
         "KEYBOARD", \
-        "-", \
+        { \
+            "key": "-", \
+            "display": "-_", \
+            "popup": { \
+                "key": "_" \
+            } \
+        }, \
         { \
             "macro": "[] LEFT", \
-            "display": "[]" \
+            "display": "[{", \
+            "popup": { \
+                "macro": "{} LEFT", \
+                "display": "{}" \
+            } \
         }, \
         "LEFT", \
         "DOWN", \
