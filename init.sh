@@ -36,21 +36,8 @@ cat > "$HOME/.termux/termux.properties" << 'EOF'
 extra-keys = [ \
     [ \
         "ESC", \
-        { \
-            "key": "q", \
-            "display": "Q", \
-            "popup": { \
-                "macro": "CTRL q", \
-                "display": "^Q" \
-            } \
-        }, \
-        { \
-            "key": "y", \
-            "display": "Y/N", \
-            "popup": { \
-                "key": "n" \
-            } \
-        }, \
+        "DRAWER", \
+        "KEYBOARD", \
         { \
             "macro": "CTRL c", \
             "display": "^C" \
@@ -124,7 +111,13 @@ extra-keys = [ \
     [ \
         "CTRL", \
         "ALT", \
-        "KEYBOARD", \
+        { \
+            "key": "=", \
+            "display": "=+", \
+            "popup": { \
+                "key": "+" \
+            } \
+        }, \
         { \
             "key": "-", \
             "display": "-_", \
