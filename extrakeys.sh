@@ -51,10 +51,10 @@ extra-keys = [ \
             "display": "TAB" \
         }, \
         { \
-            "key": "|", \
-            "display": "| \\\\", \
+            "key": "/", \
+            "display": "/ ?", \
             "popup": { \
-                "key": "\\\\" \
+                "key": "?" \
             } \
         }, \
         { \
@@ -65,10 +65,10 @@ extra-keys = [ \
             } \
         }, \
         { \
-            "key": "/", \
-            "display": "/ ?", \
+            "key": "|", \
+            "display": "| \\\\", \
             "popup": { \
-                "key": "?" \
+                "key": "\\\\" \
             } \
         }, \
         { \
